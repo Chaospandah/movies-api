@@ -1,0 +1,35 @@
+### Create new movies(updates the existing movies with a new title)
+
+## Endpoint
+`/movies/{id}`
+
+### Response (200 OK)
+
+```json
+{
+  "id": 1,
+  "title": "The Batman",
+  "release_year": 2022,
+  "genres": ["Action", "Crime"],
+  "rating": 0.0,
+  "summary": "Batman fights the ridler who is terrorizing Gotham City."
+}
+```
+
+## Error Responses (422 Validation Error)
+
+- 422 Unprocessable Entity: The request data is invalid.
+```json
+{
+  "detail": [
+    {
+      "loc": ["body", "title"],
+      "msg": "Field required",
+      "type": "value_error.missing"
+    }
+  ]
+}
+
+```
+
+[← Back to Movies](./index.mdx)

@@ -1,0 +1,25 @@
+---
+title: Reviews
+---
+
+
+The Reviews resource represents user-submitted ratings and comments on movies.
+
+Each review is always associated with a single movie.
+
+## Available Endpoints
+
+- [Add a review to a movie](./add.mdx)
+- [List reviews for a movie](./list.mdx)
+- [Delete a review](./delete.mdx)
+
+## Review Object
+
+```json
+{
+  "id": 10,
+  "movie_id": 1,
+  "reviewer": "Harnoor",
+  "rating": 9,
+  "comment": "Really good movie."
+}

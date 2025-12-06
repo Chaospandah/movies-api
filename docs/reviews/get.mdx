@@ -1,0 +1,35 @@
+# Get Reviews for a Movie
+
+## Endpoint
+`/movies/{movie_id}/reviews`
+
+### Response (200 OK)
+
+```json
+[
+  {
+    "id": 10,
+    "movie_id": 1,
+    "reviewer": "Harnoor",
+    "rating": 9.7,
+    "comment": "One of my favorite films."
+  },
+  {
+    "id": 11,
+    "movie_id": 1,
+    "reviewer": "Alex",
+    "rating": 8.3,
+    "comment": "Great score."
+  }
+]
+```
+
+## Error Responses (404 Not Found)
+- 404 Not Found: Movie with the specified ID does not exist.
+```json
+{
+  "detail": "Movie not found"
+}
+```
+
+[← Back to Reviews](./index.mdx)

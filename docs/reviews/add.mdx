@@ -1,0 +1,38 @@
+# Add Review to a Movie
+
+## Endpoint
+`/movies/{id}/reviews`
+
+### Response (201 Created)
+
+```json
+{
+  "reviewer": "Harnoor",
+  "rating": 9.7,
+  "comment": "One of my favorite films."
+}
+```
+
+## Error Responses (422 Validation Error)
+- 422 Unprocessable Entity: Invalid input data.
+```json
+{
+  "detail": [
+    {
+      "loc": ["body", "rating"],
+      "msg": "Rating must be between 1 and 10",
+      "type": "value_error"
+    }
+  ]
+}
+```
+## Error Responses (404 Not Found)
+- 404 Not Found: Movie with the specified ID does not exist.
+```json
+{
+  "detail": "Movie not found"
+}
+```
+
+[← Back to Reviews](./index.mdx)
+

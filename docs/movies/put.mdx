@@ -1,0 +1,27 @@
+### Replace/Update movies
+
+## Endpoint
+`/movies/{id}`
+
+### Response (200 OK)
+
+```json
+{
+  "id": 1,
+  "title": "The Batman (Director's Cut)",
+  "release_year": 2022,
+  "genres": ["Action", "Crime"],
+  "rating": 9.0,
+  "summary": "Updated summary."
+}
+```
+
+## Error Responses (404 Not Found)
+- 404 Not Found: Movie with the specified ID does not exist.
+```json
+{
+  "detail": "Movie not found"
+}
+```
+
+[← Back to Movies](./index.mdx)

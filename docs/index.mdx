@@ -1,0 +1,46 @@
+# Movies API Documentation
+
+Welcome to the Movies API documentation. This API allows developers to create, retrieve, 
+update, and delete movies, as well as create and manage reviews for movies.
+
+## Overview
+
+The API exposes the following resource types:
+
+- **Movies** – core resource representing a film.
+- **Reviews** – user-submitted ratings/comments on movies.
+
+## Base URL
+
+https://your-movies-api.com
+
+
+## Example Movie Object
+
+```json
+{
+  "id": 1,
+  "title": "Interstellar",
+  "release_year": 2014,
+  "genres": ["Sci-Fi", "Drama"],
+  "rating": 9.0,
+  "summary": "Earth is dying and a former pilot has to travel through a wormhole to save it."
+}
+```
+
+## Example Review Object
+
+```json
+{
+  "id": 101,
+  "movie_id": 1,
+  "user": "moviebuff123",
+  "rating": 10,
+  "comment": "An epic journey through space and time!"
+}
+```
+
+## Navigation
+
+- [Movies](./movies/index.mdx)
+- [Reviews](./reviews/index.mdx)

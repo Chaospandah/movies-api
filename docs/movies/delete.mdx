@@ -1,0 +1,17 @@
+### Delete movies
+
+## Endpoint
+`/movies/{id}`
+
+### Response (204 No Content)
+_No content is returned in the response body._
+
+## Error Responses (404 Not Found)
+- 404 Not Found: Movie with the specified ID does not exist.
+```json
+{
+  "detail": "Movie not found"
+}
+```
+
+[← Back to Movies](./index.mdx)

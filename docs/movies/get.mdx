@@ -1,0 +1,44 @@
+# Get All Movies
+
+## Endpoint
+`/movies`
+
+### Response (200 OK)
+
+```json
+  {
+    "id": 1,
+    "title": "Interstellar",
+    "release_year": 2014,
+    "genres": ["Sci-Fi", "Drama"],
+    "rating": 9.0,
+    "summary": "Earth is dying and a former pilot has to travel through a wormhole to save it."
+  }
+```
+
+## Endpoint
+
+`/movies/{id}`
+
+### Response (200 OK)
+
+```json
+{
+  "id": 1,
+  "title": "Interstellar",
+  "release_year": 2014,
+  "genres": ["Sci-Fi", "Drama"],
+  "rating": 9.0,
+  "summary": "Earth is dying and a former pilot has to travel through a wormhole to save it."
+}
+```
+
+## Error Responses
+- 404 Not Found: Movie with the specified ID does not exist.
+```json
+{
+  "detail": "Movie not found"
+}
+```
+
+[← Back to Movies](./index.mdx)
