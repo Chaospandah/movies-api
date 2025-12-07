@@ -13,8 +13,20 @@ def _get_next_id() -> int:
 
 
 @router.get("/movies", response_model=List[Movie])
-def list_movies() -> List[Movie]:
-    return movies_db
+def list_movies(genre: str | None = None) -> List[Movie]:
+    if genre is None:
+        return movies_db
+
+    # Case-insensitive filter
+    genre_lower = genre.lower()
+
+    filtered = [
+        movie for movie in movies_db
+        if any(g.lower() == genre_lower for g in movie["genres"])
+    ]
+
+    return filtered
+
 
 
 @router.get("/movies/{movie_id}", response_model=Movie)
