@@ -21,5 +21,5 @@ I created a quick API to keep on practicing working with them. Honestly having a
 Was messing around with creating new branches and merging branches to be more familiar with git commands. I can say I'm pretty proficent with using git right now.
 
 ### MDX/mardown
-Created docs for the features, wasn't too concerned in the content of the docs itself just wanted to continue practicing MDX syntax and getting itn the rhythem of working with those docs.
+Created docs for the features, wasn't too concerned with the content of the docs itself just wanted to continue practicing MDX syntax and getting itn the rhythm of working with those docs.
 I might update the docs to make them look better in the future, but as of right now sorry if they look bad! 
